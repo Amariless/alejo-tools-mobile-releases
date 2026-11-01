@@ -1,59 +1,63 @@
-# Alejo Tools Mobile
+<p align="center">
+  <img src="docs/icon.png" width="96" alt="Icono de Alejo Tools Mobile">
+</p>
 
-Una navaja suiza de herramientas personales para Android, en una sola app. Hecha con [Tauri 2](https://tauri.app) (Rust + web). Es una app de uso personal: se distribuye como APK directo, sin Play Store.
+<h1 align="center">Alejo Tools Mobile</h1>
 
-Este repositorio **solo contiene las releases** (el APK y sus notas). El código fuente es privado.
+<p align="center">
+  Una navaja suiza para Android: varias herramientas pequeñas en una sola app.
+</p>
 
-## Descargar
+<p align="center">
+  <a href="https://github.com/Amariless/alejo-tools-mobile-releases/releases/latest/download/alejo-tools.apk"><b>Descargar el APK</b></a>
+  &nbsp;·&nbsp; Android 7.0 o superior
+</p>
 
-**[⬇ Bajar la última versión (alejo-tools.apk)](https://github.com/Amariless/alejo-tools-mobile-releases/releases/latest/download/alejo-tools.apk)**
+## Qué es
 
-Todas las versiones y sus notas están en [Releases](https://github.com/Amariless/alejo-tools-mobile-releases/releases).
+En lugar de instalar una app para cada cosa, Alejo Tools Mobile junta las que más uso en el celular. No tiene cuentas, publicidad ni analítica, y lo que guardas se queda en tu teléfono.
 
-### Cómo instalar
-
-1. Descargá el `.apk` en el celular y abrilo.
-2. Android te va a pedir permiso para "instalar apps de orígenes desconocidos" para tu navegador o explorador de archivos: activalo solo para esa instalación.
-3. Si Google Play Protect avisa que la app no es conocida, es porque no viene de la Play Store; podés elegir "Instalar de todas formas".
-4. Las versiones siguientes se instalan desde la propia app: **Configuración → Buscar actualización**.
-
-Requiere Android 7.0 o superior. El APK es universal (sirve para todas las arquitecturas) y está firmado siempre con la misma clave, así que las actualizaciones se instalan encima de la versión anterior sin perder datos.
-
-## Qué hace
+## Herramientas
 
 | Herramienta | Para qué sirve |
 |---|---|
-| **Sincronización** | Cliente de [Syncthing-Android](https://github.com/syncthing/syncthing-android): ver estado, carpetas y dispositivos, y detectar conflictos y duplicados en lo que sincronizás. |
-| **Descargar Música** | Baja canciones de YouTube, SoundCloud y otros sitios como mp3, con portada, artista y vista previa. También se puede usar desde el menú "Compartir" de otras apps. |
-| **Reloj** | Pomodoro, reloj mundial y clima. |
+| **Descargar Música** | Baja canciones de YouTube, SoundCloud y otros sitios como mp3, con portada y artista, y te deja escucharlas antes. También funciona desde el menú *Compartir* de otras apps. |
+| **Gastos** | Lleva tus gastos del mes por categoría. |
 | **Ideas rápidas** | Notas sueltas para no perder una idea. |
-| **Gastos** | Registro de gastos mensuales por categoría. |
-| **Paleta de Colores** | Extrae una paleta de colores desde una foto (galería o cámara). |
-| **Creador de Texturas** | Convierte la foto de una superficie en un normal map y un set de texturas, con cámara macro propia. |
-| **Generador de Escenas** | Genera ideas de escenas 3D con ambientación, estado y atmósfera. |
-| **Lector de Documentos** | Lector de PDF y libros EPUB; puede ser el lector por defecto al abrir un PDF. |
-| **Configuración** | Carpetas, tema y actualizaciones. |
+| **Reloj** | Pomodoro, reloj mundial y clima. |
+| **Lector de Documentos** | Lee PDF y libros EPUB. Puede ser tu lector predeterminado de PDF. |
+| **Paleta de Colores** | Saca una paleta de colores de una foto de la galería o de la cámara. |
+| **Creador de Texturas** | Convierte la foto de una superficie en un set de texturas (con normal map) para 3D, usando una cámara con enfoque macro. |
+| **Generador de Escenas** | Ideas de escenas 3D con ambientación, estado y atmósfera. |
+| **Sincronización** | Revisa el estado de Syncthing en el celular y encuentra conflictos y archivos duplicados en tus carpetas sincronizadas. |
 
-Los datos de Gastos, Ideas y demás herramientas se guardan **solo en el celular**; la app no tiene cuentas ni servidores propios.
+## Instalación
 
-## Permisos y para qué se usa cada uno
+La app no está en Play Store; se instala con el APK.
 
-La app pide pocos permisos y cada uno está ligado a una función concreta. Si no usás esa función, podés negarlo sin que el resto deje de andar.
+1. Descarga [`alejo-tools.apk`](https://github.com/Amariless/alejo-tools-mobile-releases/releases/latest/download/alejo-tools.apk) desde el celular y ábrelo.
+2. Android te pedirá permitir que tu navegador o gestor de archivos instale apps. Puedes activarlo solo para esta instalación.
+3. Si Google Play Protect dice que no conoce la app, es porque no viene de la Play Store. Elige *Instalar de todas formas*.
 
-| Permiso | Cómo se pide | Para qué lo usa | Si lo negás |
-|---|---|---|---|
-| **Internet** (`INTERNET`) | Automático al instalar | Buscar y bajar actualizaciones desde este repositorio; descargar música; consultar el clima ([Open-Meteo](https://open-meteo.com)); mostrar portadas; hablar con Syncthing, que corre en tu propio celular (`127.0.0.1`). | Seguirían andando las herramientas que no necesitan red (Gastos, Ideas, Lector, Texturas). |
-| **Instalar apps desconocidas** (`REQUEST_INSTALL_PACKAGES`) | Ajuste de Android, la primera vez que actualizás desde la app | Instalar **la propia actualización** de Alejo Tools Mobile que bajó desde este repositorio. No instala ninguna otra app. Android siempre te muestra su diálogo de confirmación. | Tenés que actualizar bajando el APK a mano. |
-| **Acceso a todos los archivos** (`MANAGE_EXTERNAL_STORAGE`) | Pantalla de Ajustes de Android, solo cuando abrís una función que lo necesita | Leer las carpetas que sincroniza Syncthing-Android (que viven fuera del espacio privado de la app) para detectar conflictos y duplicados, y guardar tus mp3 en la carpeta que vos elegiste. | Sincronización no puede analizar carpetas ni Descargar Música guardar en carpetas externas. |
-| **Cámara** (`CAMERA`) | Diálogo normal de Android, al abrir una cámara dentro de la app | Cámara propia con enfoque manual/macro para el Creador de Texturas, y tomar una foto para la Paleta de Colores. | Podés seguir eligiendo fotos de la galería. |
+Las versiones siguientes se instalan desde la propia app, en *Configuración → Buscar actualización*. Todas están firmadas con la misma clave, así que se instalan encima sin perder tus datos. El APK sirve para cualquier celular, sin importar su procesador.
 
-### Advertencias
+Todas las versiones y sus notas están en [Releases](https://github.com/Amariless/alejo-tools-mobile-releases/releases).
 
-- **"Acceso a todos los archivos" es un permiso sensible.** Android lo reserva para apps que necesitan leer rutas de otras apps; por eso no lo pide al instalar y lo tenés que activar vos a mano. La app solo lo usa en las carpetas que configurás. Podés revocarlo cuando quieras desde *Ajustes → Apps → Alejo Tools → Permisos → Archivos*.
-- **Instalar fuera de la Play Store** implica confiar en el origen del APK. Descargalo solo desde este repositorio y, ante la duda, compará el checksum `.sha256` publicado en la release cuando exista.
-- **Descargar Música**: usá la herramienta solo con contenido que tengas derecho a descargar. Respetar los términos de cada sitio y los derechos de autor es responsabilidad de quien la usa.
-- La app **no tiene analítica ni publicidad** ni envía tus datos a servidores del autor.
+## Permisos
 
-## Reportar un problema
+La app pide pocos permisos, y cada uno lo usa una función concreta. Si no usas esa función, puedes negarlo y el resto sigue funcionando.
 
-Abrí un issue en este repositorio con la versión de la app (Configuración) y qué estabas haciendo.
+| Permiso | Para qué lo usa | Si lo niegas |
+|---|---|---|
+| **Internet** | Buscar actualizaciones, descargar música, consultar el clima ([Open-Meteo](https://open-meteo.com)), mostrar portadas y hablar con Syncthing, que corre en tu propio celular. | Funcionan las herramientas que no usan red: Gastos, Ideas, Lector y Texturas. |
+| **Instalar apps** | Instalar las actualizaciones de la propia app. No instala nada más, y Android siempre te pide confirmar. | Tienes que actualizar descargando el APK a mano. |
+| **Acceso a todos los archivos** | Revisar las carpetas que sincroniza Syncthing y guardar tus mp3 en la carpeta que elijas. Se pide solo cuando abres una de esas funciones. | Sincronización no puede revisar carpetas y la música se guarda solo en la carpeta de la app. |
+| **Cámara** | La cámara macro del Creador de Texturas y las fotos para la Paleta de Colores. | Puedes elegir fotos de la galería. |
+
+El acceso a todos los archivos es un permiso delicado, por eso tienes que activarlo tú desde los ajustes de Android y puedes quitarlo cuando quieras en *Ajustes → Apps → Alejo Tools → Permisos*. Descarga el APK solo desde este repositorio.
+
+Usa Descargar Música solo con contenido que tengas derecho a descargar.
+
+---
+
+Este repositorio solo publica el APK; el código fuente es privado. Si algo falla, abre un [issue](https://github.com/Amariless/alejo-tools-mobile-releases/issues) con la versión de la app (la ves en Configuración) y qué estabas haciendo.
