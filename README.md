@@ -1,21 +1,21 @@
 <p align="center">
-  <img src="docs/icon.png" width="96" alt="Icono de Alejo Tools Mobile">
+  <img src="docs/icon.png" width="96" alt="Icono de Atelier">
 </p>
 
-<h1 align="center">Alejo Tools Mobile</h1>
+<h1 align="center">Atelier</h1>
 
 <p align="center">
   Una navaja suiza para Android: varias herramientas pequeñas en una sola app.
 </p>
 
 <p align="center">
-  <a href="https://github.com/Amariless/alejo-tools-mobile-releases/releases/latest/download/alejo-tools.apk"><b>Descargar el APK</b></a>
+  <a href="https://github.com/Amariless/atelier-mobile-releases/releases/latest/download/atelier.apk"><b>Descargar el APK</b></a>
   &nbsp;·&nbsp; Android 7.0 o superior
 </p>
 
 ## Qué es
 
-En lugar de instalar una app para cada cosa, Alejo Tools Mobile junta las que más uso en el celular. No tiene cuentas, publicidad ni analítica, y lo que guardas se queda en tu teléfono.
+En lugar de instalar una app para cada cosa, Atelier junta las que más uso en el celular. No tiene cuentas, publicidad ni analítica, y lo que guardas se queda en tu teléfono.
 
 ## Herramientas
 
@@ -35,13 +35,13 @@ En lugar de instalar una app para cada cosa, Alejo Tools Mobile junta las que m�
 
 La app no está en Play Store; se instala con el APK.
 
-1. Descarga [`alejo-tools.apk`](https://github.com/Amariless/alejo-tools-mobile-releases/releases/latest/download/alejo-tools.apk) desde el celular y ábrelo.
+1. Descarga [`atelier.apk`](https://github.com/Amariless/atelier-mobile-releases/releases/latest/download/atelier.apk) desde el celular y ábrelo.
 2. Android te pedirá permitir que tu navegador o gestor de archivos instale apps. Puedes activarlo solo para esta instalación.
 3. Si Google Play Protect dice que no conoce la app, es porque no viene de la Play Store. Elige *Instalar de todas formas*.
 
 Las versiones siguientes se instalan desde la propia app, en *Configuración → Buscar actualización*. Todas están firmadas con la misma clave, así que se instalan encima sin perder tus datos. El APK sirve para cualquier celular, sin importar su procesador.
 
-Todas las versiones y sus notas están en [Releases](https://github.com/Amariless/alejo-tools-mobile-releases/releases).
+Todas las versiones y sus notas están en [Releases](https://github.com/Amariless/atelier-mobile-releases/releases).
 
 ## Permisos
 
@@ -54,10 +54,10 @@ La app pide pocos permisos, y cada uno lo usa una función concreta. Si no usas 
 | **Acceso a todos los archivos** | Revisar las carpetas que sincroniza Syncthing y guardar tus mp3 en la carpeta que elijas. Se pide solo cuando abres una de esas funciones. | Sincronización no puede revisar carpetas y la música se guarda solo en la carpeta de la app. |
 | **Cámara** | La cámara macro del Creador de Texturas y las fotos para la Paleta de Colores. | Puedes elegir fotos de la galería. |
 
-El acceso a todos los archivos es un permiso delicado, por eso tienes que activarlo tú desde los ajustes de Android y puedes quitarlo cuando quieras en *Ajustes → Apps → Alejo Tools → Permisos*. Descarga el APK solo desde este repositorio.
+El acceso a todos los archivos es un permiso delicado, por eso tienes que activarlo tú desde los ajustes de Android y puedes quitarlo cuando quieras en *Ajustes → Apps → Atelier → Permisos*. Descarga el APK solo desde este repositorio.
 
 Usa Descargar Música solo con contenido que tengas derecho a descargar.
 
 ---
 
-Este repositorio solo publica el APK; el código fuente es privado. Si algo falla, abre un [issue](https://github.com/Amariless/alejo-tools-mobile-releases/issues) con la versión de la app (la ves en Configuración) y qué estabas haciendo.
+Este repositorio solo publica el APK; el código fuente es privado. Si algo falla, abre un [issue](https://github.com/Amariless/atelier-mobile-releases/issues) con la versión de la app (la ves en Configuración) y qué estabas haciendo.
