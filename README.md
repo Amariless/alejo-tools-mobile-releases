@@ -1,63 +1,111 @@
 <p align="center">
-  <img src="docs/icon.png" width="96" alt="Icono de Atelier">
+  <img src="docs/icon.png" width="96" alt="Atelier Mobile icon">
 </p>
 
-<h1 align="center">Atelier</h1>
+<h1 align="center">Atelier Mobile</h1>
 
 <p align="center">
-  Una navaja suiza para Android: varias herramientas pequeñas en una sola app.
+  A Swiss Army knife for Android: the small tools you reach for every day, in one app.
 </p>
 
 <p align="center">
-  <a href="https://github.com/Amariless/atelier-mobile-releases/releases/latest/download/atelier.apk"><b>Descargar el APK</b></a>
-  &nbsp;·&nbsp; Android 7.0 o superior
+  <a href="https://github.com/Amariless/atelier-mobile-releases/releases/latest/download/atelier.apk"><img src="https://img.shields.io/badge/Android-APK-17161c?style=for-the-badge&labelColor=d9822b&logo=android&logoColor=white" alt="Download for Android"></a>
 </p>
 
-## Qué es
+## What it is
 
-En lugar de instalar una app para cada cosa, Atelier junta las que más uso en el celular. No tiene cuentas, publicidad ni analítica, y lo que guardas se queda en tu teléfono.
+Instead of installing one app for each little thing, Atelier Mobile brings together the tools I use most on my phone. No accounts, no ads, no analytics, and what you save stays on your phone. On your home screen it shows up simply as *Atelier*.
 
-## Herramientas
+## The tools
 
-| Herramienta | Para qué sirve |
-|---|---|
-| **Descargar Música** | Baja canciones de YouTube, SoundCloud y otros sitios como mp3, con portada y artista, y te deja escucharlas antes. También funciona desde el menú *Compartir* de otras apps. |
-| **Gastos** | Lleva tus gastos del mes por categoría. |
-| **Ideas rápidas** | Notas sueltas para no perder una idea. |
-| **Reloj** | Pomodoro, reloj mundial y clima. |
-| **Lector de Documentos** | Lee PDF y libros EPUB. Puede ser tu lector predeterminado de PDF. |
-| **Paleta de Colores** | Saca una paleta de colores de una foto de la galería o de la cámara. |
-| **Creador de Texturas** | Convierte la foto de una superficie en un set de texturas (con normal map) para 3D, usando una cámara con enfoque macro. |
-| **Generador de Escenas** | Ideas de escenas 3D con ambientación, estado y atmósfera. |
-| **Sincronización** | Revisa el estado de Syncthing en el celular y encuentra conflictos y archivos duplicados en tus carpetas sincronizadas. |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Music downloader</h3>
+      <p>Download songs from YouTube, SoundCloud and other sites as MP3, with cover and artist already filled in. Listen before you download, and send a song from any other app with the <i>Share</i> menu.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Document reader</h3>
+      <p>Read PDFs and EPUB books in one place. It can be your default PDF reader.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Expenses</h3>
+      <p>Keep track of what you spend each month, by category.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Quick ideas</h3>
+      <p>Jot down a thought before it slips away.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Clock</h3>
+      <p>Pomodoro timer, world clock and the weather.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Sync</h3>
+      <p>Check how Syncthing is doing on your phone, and find conflicts and duplicate files in your synced folders.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Color palette</h3>
+      <p>Take a picture or pick one from your gallery and get its color palette.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Texture maker</h3>
+      <p>Turn a photo of a surface into a set of textures for 3D, normal map included. Works best with a camera that has macro focus.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Scene generator</h3>
+      <p>Ideas for 3D scenes that combine a setting, a state and an atmosphere.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>And it keeps growing</h3>
+      <p>New tools arrive with updates, which install right from the app.</p>
+    </td>
+  </tr>
+</table>
 
-## Instalación
+## Download
 
-La app no está en Play Store; se instala con el APK.
+Atelier Mobile isn't on the Play Store; you install it from the APK. It needs Android 7.0 or newer and works on any phone, whatever its processor.
 
-1. Descarga [`atelier.apk`](https://github.com/Amariless/atelier-mobile-releases/releases/latest/download/atelier.apk) desde el celular y ábrelo.
-2. Android te pedirá permitir que tu navegador o gestor de archivos instale apps. Puedes activarlo solo para esta instalación.
-3. Si Google Play Protect dice que no conoce la app, es porque no viene de la Play Store. Elige *Instalar de todas formas*.
+1. [Download `atelier.apk`](https://github.com/Amariless/atelier-mobile-releases/releases/latest/download/atelier.apk) on your phone and open it.
+2. Android will ask you to allow your browser or file manager to install apps. You can allow it just for this install.
+3. If Google Play Protect says it doesn't recognize the app, that's because it doesn't come from the Play Store. Choose *Install anyway*.
 
-Las versiones siguientes se instalan desde la propia app, en *Configuración → Buscar actualización*. Todas están firmadas con la misma clave, así que se instalan encima sin perder tus datos. El APK sirve para cualquier celular, sin importar su procesador.
+New versions install from inside the app, in *Settings → Check for update*. They're all signed with the same key, so they install over the previous one without losing your data. All versions and their notes are on the [Releases](https://github.com/Amariless/atelier-mobile-releases/releases) page.
 
-Todas las versiones y sus notas están en [Releases](https://github.com/Amariless/atelier-mobile-releases/releases).
+## Permissions
 
-## Permisos
+The app asks for few permissions, and each one is used by a specific tool. If you don't use that tool, you can deny it and everything else keeps working.
 
-La app pide pocos permisos, y cada uno lo usa una función concreta. Si no usas esa función, puedes negarlo y el resto sigue funcionando.
-
-| Permiso | Para qué lo usa | Si lo niegas |
+| Permission | What it's for | If you deny it |
 |---|---|---|
-| **Internet** | Buscar actualizaciones, descargar música, consultar el clima ([Open-Meteo](https://open-meteo.com)), mostrar portadas y hablar con Syncthing, que corre en tu propio celular. | Funcionan las herramientas que no usan red: Gastos, Ideas, Lector y Texturas. |
-| **Instalar apps** | Instalar las actualizaciones de la propia app. No instala nada más, y Android siempre te pide confirmar. | Tienes que actualizar descargando el APK a mano. |
-| **Acceso a todos los archivos** | Revisar las carpetas que sincroniza Syncthing y guardar tus mp3 en la carpeta que elijas. Se pide solo cuando abres una de esas funciones. | Sincronización no puede revisar carpetas y la música se guarda solo en la carpeta de la app. |
-| **Cámara** | La cámara macro del Creador de Texturas y las fotos para la Paleta de Colores. | Puedes elegir fotos de la galería. |
+| **Internet** | Checking for updates, downloading music, the weather ([Open-Meteo](https://open-meteo.com)), covers, and talking to Syncthing running on your own phone. | The tools that don't need the internet still work: Expenses, Quick ideas, Document reader and Texture maker. |
+| **Install apps** | Installing the app's own updates. It doesn't install anything else, and Android always asks you to confirm. | You'll need to update by downloading the APK yourself. |
+| **All files access** | Checking the folders Syncthing syncs and saving your MP3s in the folder you choose. Only requested when you open one of those tools. | Sync can't check folders and music is saved in the app's own folder. |
+| **Camera** | The macro camera in Texture maker and photos for Color palette. | You can pick photos from your gallery instead. |
 
-El acceso a todos los archivos es un permiso delicado, por eso tienes que activarlo tú desde los ajustes de Android y puedes quitarlo cuando quieras en *Ajustes → Apps → Atelier → Permisos*. Descarga el APK solo desde este repositorio.
+All files access is a sensitive permission, which is why you have to turn it on yourself in Android's settings. You can remove it anytime in *Settings → Apps → Atelier → Permissions*. Only download the APK from this repository.
 
-Usa Descargar Música solo con contenido que tengas derecho a descargar.
+Only use the music downloader with content you have the right to download.
+
+## Feedback
+
+Found a bug, have an idea or just want to say something? Each button opens a short form.
+
+<p>
+  <a href="https://github.com/Amariless/atelier-mobile-releases/issues/new?template=bug.yml"><img src="https://img.shields.io/badge/Report_a_bug-d9822b?style=for-the-badge" alt="Report a bug"></a>
+  <a href="https://github.com/Amariless/atelier-mobile-releases/issues/new?template=idea.yml"><img src="https://img.shields.io/badge/Suggest_an_idea-d9822b?style=for-the-badge" alt="Suggest an idea"></a>
+  <a href="https://github.com/Amariless/atelier-mobile-releases/issues/new?template=comment.yml"><img src="https://img.shields.io/badge/Leave_a_comment-d9822b?style=for-the-badge" alt="Leave a comment"></a>
+</p>
 
 ---
 
-Este repositorio solo publica el APK; el código fuente es privado. Si algo falla, abre un [issue](https://github.com/Amariless/atelier-mobile-releases/issues) con la versión de la app (la ves en Configuración) y qué estabas haciendo.
+<sub>This repository only hosts the APK; the source code is private.</sub>
